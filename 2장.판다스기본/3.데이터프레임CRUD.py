@@ -1,6 +1,6 @@
 import pandas as pd
 
-titanic_df = pd.read_csv("./data/train.csv")
+titanic_df = pd.read_csv("../data/titanic_train.csv")
 
 # 데이터프레임 칼럼생성
 titanic_df["나다호다"] = 0  # 새로운 칼럼 '나다호다' 생성

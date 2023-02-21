@@ -1,6 +1,6 @@
 import pandas as pd
 
-titanic_df = pd.read_csv("./data/train.csv")
+titanic_df = pd.read_csv("../data/titanic_train.csv")
 
 # isna(): Nan이면 True
 titanic_df.isna().head(3)

@@ -1,6 +1,6 @@
 import pandas as pd
 
-titanic_df = pd.read_csv("./data/train.csv")
+titanic_df = pd.read_csv("../data/titanic_train.csv")
 
 # iloc 위치기반 인덱싱
 data = {

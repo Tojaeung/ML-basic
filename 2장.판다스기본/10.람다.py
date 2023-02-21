@@ -1,6 +1,6 @@
 import pandas as pd
 
-titanic_df = pd.read_csv("./data/train.csv")
+titanic_df = pd.read_csv("../data/titanic_train.csv")
 
 # 파이썬 람다 기본사용
 squre = lambda x: x**2

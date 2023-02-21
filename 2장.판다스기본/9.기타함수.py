@@ -1,6 +1,6 @@
 import pandas as pd
 
-titanic_df = pd.read_csv("./data/train.csv")
+titanic_df = pd.read_csv("../data/titanic_train.csv")
 
 # nunique(): 칼럼의 고유값이 몇개인지 파악
 titanic_df["Pclass"].nunique()  # 3
