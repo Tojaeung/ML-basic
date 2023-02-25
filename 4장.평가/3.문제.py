@@ -29,7 +29,7 @@ Age: 나이
 Outecome: 결정값 (0, 1)
 """
 
-diabetes_data = pd.read_csv("../data/diabetes.csv")
+diabetes_data = pd.read_csv("C:\\Users\\tojaeung\\datasets\\diabetes.csv")
 print(diabetes_data["Outcome"].value_counts())
 diabetes_data.head()
 diabetes_data.info()

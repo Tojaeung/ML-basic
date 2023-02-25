@@ -6,8 +6,8 @@ import pandas as pd
 
 # %% 데이터 불러오기 및 확인
 feature_name_df = pd.read_csv(
-    "../data/human_activity/features.txt",
-    sep="\s+",  # \s+ 정규표현식으로 공백을 기준으로 나눈다는 의미
+    "C:\\Users\\tojaeung\\datasets\\human_activity\\features.txt",
+    sep="\\s+",  # \s+ 정규표현식으로 공백을 기준으로 나눈다는 의미
     header=None,  # 데이터를 불러올떄 헤더정보(칼럼이름)이 없다는것을 알려주고 따로 넣어준다.
     names=["column_index", "column_name"],
 )
@@ -53,8 +53,8 @@ def get_new_feature_name_df(old_feature_name_df):
 
 def get_human_dataset():
     feature_name_df = pd.read_csv(
-        "../data/human_activity/features.txt",
-        sep="\s+",
+        "C:\\Users\\tojaeung\\datasets\\human_activity\\features.txt",
+        sep="\\s+",
         header=None,
         names=["column_index", "column_name"],
     )
@@ -66,20 +66,24 @@ def get_human_dataset():
     feature_name = new_feature_name_df.iloc[:, 1].values.tolist()  # type: ignore
 
     X_train = pd.read_csv(
-        "../data/human_activity/train/X_train.txt", sep="\s+", names=feature_name
+        "C:\\Users\\tojaeung\\datasets\\human_activity\\train\\X_train.txt",
+        sep="\\s+",
+        names=feature_name,
     )
     X_test = pd.read_csv(
-        "../data/human_activity/test/X_test.txt", sep="\s+", names=feature_name
+        "C:\\Users\\tojaeung\\datasets\\human_activity\\test\\X_test.txt",
+        sep="\\s+",
+        names=feature_name,
     )
     y_train = pd.read_csv(
-        "../data/human_activity/train/y_train.txt",
-        sep="\s+",
+        "C:\\Users\\tojaeung\\datasets\\human_activity\\train\\y_train.txt",
+        sep="\\s+",
         header=None,
         names=["action"],
     )
     y_test = pd.read_csv(
-        "../data/human_activity/test/y_test.txt",
-        sep="\s+",
+        "C:\\Users\\tojaeung\\datasets\\human_activity\\test\\y_test.txt",
+        sep="\\s+",
         header=None,
         names=["action"],
     )
