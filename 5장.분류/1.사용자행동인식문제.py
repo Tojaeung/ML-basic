@@ -1,3 +1,6 @@
+# 데이터 다운로드 링크
+# https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
 # %% 라이브러리 호출
 import pandas as pd
 
